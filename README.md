@@ -23,12 +23,7 @@ pip3 install -r requirements.txt
 Use the pretrained model to generate 1,000,000 passwords, saving them to `generated_pass.txt`.
 
 ```bash
-python sample.py \
-	--input-dir pretrained \
-	--checkpoint pretrained/checkpoints/checkpoint_200000.ckpt \
-	--output generated_pass.txt \
-	--batch-size 1024 \
-	--num-samples 1000000
+python sample.py --input-dir pretrained --checkpoint pretrained/checkpoints/checkpoint_200000.ckpt --output generated_pass.txt --batch-size 1024 --num-samples 1000000
 ```
 
 ### Training your own models
